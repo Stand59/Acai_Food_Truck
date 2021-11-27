@@ -33,25 +33,84 @@
             </ul>
         </nav>
 
-        <div id="background">
-        Hello Mara! Once upon a time thier was a little girl who loved pho.
-        </div>
-
-        <footer class="site-footer">
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <ul class="list-unstyled">
-                        <li><a href="#"><p>Home</p></a></li>
-                        <li><a href="story.html"><p>Our Story</p></a></li>
-                        <li><a href="contact.html"><p>Contact</p></a></li>
-                    </ul>
+        <div id="background" >
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4 text-center my-3">Our Current Location</h1>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center my-3">
-                    <a href="tel:+14803334444"><p>Tel: (480)333-4444</p></a>
-                    <a href="email:aliceacai@gmail.com"><p>Email: aliceacai@gmail.com</p></a>
+                <div class="container-fluid">
+                    <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>  
+            <div class="container-fluid">
+                <div class="card" id="truckReserve">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-4 text-center my-3">Submit A Reservation Request</h1>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="eventName">Name of Event</label>
+                            <div class="col">
+                                <input class="form-control" id="eventName" type="text" name="eventName" placeholder="Name of Event">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="eventLocation">Event Location</label>
+                            <div class="col">
+                                <input class="form-control" id="eventLocation" type="text" name="eventLocation" placeholder="Location of Event">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="startTime">Requested Start Time</label>
+                            <div class="col">
+                                <input class="form-control" id="startTime" type="time" name="startTime">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="endTime">Requested End Time</label>
+                            <div class="col">
+                                <input class="form-control" id="endTime" type="time" name="endTime">
+                            </div>
+                        </div>
+                        
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="date">Date</label>
+                            <div class="col">
+                                <input class="form-control" type="date" id="date" name="date" placeholder="date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col">
+                                <button data-dismiss="modal" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
+        
+
+            <footer class="site-footer">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><p>Home</p></a></li>
+                            <li><a href="story.html"><p>Our Story</p></a></li>
+                            <li><a href="contact.html"><p>Contact</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 text-center my-3">
+                        <a href="tel:+14803334444"><p>Tel: (480)333-4444</p></a>
+                        <a href="email:aliceacai@gmail.com"><p>Email: aliceacai@gmail.com</p></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
     
        
     

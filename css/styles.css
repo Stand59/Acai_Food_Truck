@@ -33,10 +33,30 @@ a, a:hover {
     padding: 30px;
   }
 
+  #truckReserve{
+    padding: 50px;
+    padding-top: 0px;
+    background-color:orchid;
+  }
+
   footer {
     padding: 30px;
   }
 
   h1, h2, h3 {
     font-family: "Lobster", cursive; 
+  }
+
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+  }
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
   }
