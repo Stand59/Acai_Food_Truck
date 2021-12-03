@@ -61,3 +61,11 @@ a, a:hover {
     position:absolute;
   }
 
+  .btn{
+    background-color:#9932CC;
+    color:white;
+  }
+
+  .col-form-label{
+    font-size: 20px;
+  }
