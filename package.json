@@ -5,8 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "start": "npm run watch:all",
+    "lite": "lite-server",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,9 @@
   },
   "homepage": "https://github.com/Stand59/Acai_Food_Truck#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
