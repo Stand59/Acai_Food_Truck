@@ -4,6 +4,11 @@
   "description": "Food Truck",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin story.html -d dist --htmlmin -o dist/story.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "imagemin": "imagemin img/* -o dist/img",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run watch:all",
     "lite": "lite-server",
@@ -21,9 +26,13 @@
   },
   "homepage": "https://github.com/Stand59/Acai_Food_Truck#readme",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.6.1",
     "onchange": "^7.0.0",
-    "parallelshell": "3.0.1"
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
